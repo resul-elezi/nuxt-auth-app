@@ -5,5 +5,11 @@ export default defineNuxtConfig({
   modules: ['@nuxt/eslint',
     '@primevue/nuxt-module'
     ],
-    primevue: {}
+    primevue: {
+      options: {
+          theme: {
+              preset: Aura
+          }
+      }
+  }
 })
