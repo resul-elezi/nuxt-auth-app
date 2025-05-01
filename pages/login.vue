@@ -1,41 +1,43 @@
 <template>
-    <div class="p-4">
-      <h2>Login</h2>
-      <div class="p-field">
-        <label for="username">Username</label>
-        <InputText v-model="username" id="username" />
-      </div>
-      <div class="p-field">
-        <label for="password">Password</label>
-        <Password v-model="password" id="password" toggleMask />
-      </div>
-      <Button label="Login" @click="login" />
-      <Toast />
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        username: '',
-        password: ''
-      }
-    },
-    methods: {
-      async login() {
-        try {
-          const res = await this.$axios.$post('/api/login', {
-            username: this.username,
-            password: this.password
-          })
-          this.$toast.add({ severity: 'success', summary: 'Login successful' })
-          // speichere token lokal oder navigiere weiter
-        } catch (err) {
-          this.$toast.add({ severity: 'error', summary: 'Login failed' })
-        }
-      }
+  <div class="login-container">
+    <form @submit.prevent="handleLogin">
+      <FloatLabel variant="on">
+        <InputText id="on_label" v-model="value3" />
+        <label for="on_label">On Label</label>
+
+      </FloatLabel>
+      <!-- Password für Passwort -->
+      <!-- Button zum Absenden -->
+    </form>
+  </div>
+</template>
+
+<script>
+import InputText from 'primevue/inputtext'
+import FloatLabel from 'primevue/floatlabel'
+
+import { Password } from 'primevue/password'
+import { Button } from 'primevue/button'
+
+export default {
+  components: {
+    InputText,
+    Password,
+    Button
+  },
+  data() {
+    return {
+      email: '',
+      password: ''
+    }
+  },
+  methods: {
+    handleLogin() {
+      // Hier später: API-Aufruf
+      console.log('Login attempt:', this.email, this.password)
     }
   }
-  </script>
+}
+</script>
+
   
