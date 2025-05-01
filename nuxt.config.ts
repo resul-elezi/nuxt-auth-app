@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     primevue: {
       importTheme: { from: '@/themes/mytheme.js' },
       components: {
-        include: ['Button', 'DataTable']
+        include: ['*']
       },
       options: {
           ripple: true,
