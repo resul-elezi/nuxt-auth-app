@@ -44,7 +44,7 @@
         return
       }
   
-      // Token speichern (z. B. im localStorage)
+      // Token speichern (z.B. im localStorage)
       localStorage.setItem('token', data.value.token)
   
       // Weiterleitung nach dem Login
