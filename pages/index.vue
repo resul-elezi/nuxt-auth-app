@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 import Logo from '~/components/Logo.vue'
 
 export default {
@@ -32,7 +32,7 @@ export default {
     Logo
   }
 }
-</script>
+</script> -->
 
 <style>
 .container {
