@@ -37,8 +37,6 @@ module.exports = {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    // Deaktivieren:
-    // '@nuxtjs/eslint-module'
   ],
   /*
    ** Nuxt.js modules
