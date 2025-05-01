@@ -1,10 +1,6 @@
-import { createApp } from "vue";
 
-import PrimeVue from 'primevue/config';
 import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
-
-const app = createApp(App);
 
 const MyPreset = definePreset(Aura, {
     semantic: {
@@ -24,14 +20,10 @@ const MyPreset = definePreset(Aura, {
     }
 });
 
-app.use(PrimeVue, {
-    // Default theme configuration
-    theme: {
-        preset: MyPreset,
-        options: {
-            prefix: 'p',
-            darkModeSelector: 'system',
-            cssLayer: false
-        }
+export default {
+    preset: MyPreset,
+    options: {
+        darkModeSelector: '.p-dark'
     }
- });
+};
+

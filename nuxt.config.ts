@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@primevue/nuxt-module'
     ],
     primevue: {
+      importTheme: { from: '@/themes/mytheme.js' },
       components: {
         include: ['Button', 'DataTable']
       },
@@ -15,7 +16,7 @@ export default defineNuxtConfig({
           ripple: true,
           inputVariant: 'filled',
           theme: {
-              preset: Aura,
+              preset: MyPreset,
               options: {
                   prefix: 'p',
                   darkModeSelector: 'system',
