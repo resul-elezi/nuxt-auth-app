@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <Button label="Create account" raised />
-    <Button label="Login" @click="navigateTo('/login')"  raised/>
+    <MainLayout />
   </div>
 </template>
 
 <script setup>
 import Button from 'primevue/button';
+import MainLayout from '~/layouts/MainLayout.vue';
 
 // export default {
 

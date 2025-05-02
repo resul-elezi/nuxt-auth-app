@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@nuxt/eslint',
-    '@primevue/nuxt-module'
+    '@primevue/nuxt-module',
+    '@nuxtjs/tailwindcss
     ],
     primevue: {
       importTheme: { from: '@/themes/mytheme.js' },
@@ -22,7 +23,7 @@ export default defineNuxtConfig({
                   darkModeSelector: 'system',
                   cssLayer: false
               }
+            }
           }
-      }
-  }
-})
+    }
+  })
