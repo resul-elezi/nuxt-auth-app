@@ -16,11 +16,11 @@
             </div>
 
             <div>
-                <FloatLabel>
+                <FloatLabel variant="on">
                     <InputText id="email1" type="email" v-model="value1" class="w-full mb-4" autocomplete="off"/>
                     <label for="email1" class="text-surface-900 dark:text-surface-0 font-medium mb-2 block">Email address</label>
                 </FloatLabel>
-                <FloatLabel variant="in">
+                <FloatLabel variant="on">
                     <InputText id="password1" type="password"  v-model="value2" class="w-full mb-4"/>
                     <label for="password1" class="text-surface-900 dark:text-surface-0 font-medium mb-2 block">Password</label>
                 </FloatLabel>
