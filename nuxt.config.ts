@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/eslint',
     '@primevue/nuxt-module',
-    '@nuxtjs/tailwindcss
+    '@nuxtjs/tailwindcss'
     ],
     primevue: {
       importTheme: { from: '@/themes/mytheme.js' },
