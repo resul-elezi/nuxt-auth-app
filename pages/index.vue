@@ -1,5 +1,5 @@
 <template>
-  <RouterView/>
+  <Nuxt/>
 </template>
 
 <script setup>
