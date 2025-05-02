@@ -16,7 +16,7 @@
             </div>
 
             <div>
-                <FloatLabel variant="in">
+                <FloatLabel>
                     <InputText id="email1" type="email" v-model="value1" class="w-full mb-4" autocomplete="off"/>
                     <label for="email1" class="text-surface-900 dark:text-surface-0 font-medium mb-2 block">Email address</label>
                 </FloatLabel>
@@ -27,7 +27,7 @@
 
                 <div class="flex items-center justify-between mb-12">
                     <div class="flex items-center">
-                        <Checkbox id="rememberme1" v-model="checked1" :binary="true" class="mr-2" />
+                        <Checkbox id="rememberme1" v-model="checked1" :binary="false" class="mr-2" />
                         <label for="rememberme1">Remember me</label>
                     </div>
                     <a class="font-medium no-underline ml-2 text-primary text-right cursor-pointer">Forgot password?</a>
