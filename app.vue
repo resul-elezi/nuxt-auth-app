@@ -1,12 +1,7 @@
 <template>
   <div>
-    <Button label="Verify" />
+    <NuxtPage />
   </div>
 </template>
 
-<script setup>
-// export default {
-
-// }
-</script>
 
