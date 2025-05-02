@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Button label="Create account" raised />
-    <Button label="Login" @click="login.vue" raised />
+    <Button label="Login" @click="login.vue"  raised/>
   </div>
 </template>
 
