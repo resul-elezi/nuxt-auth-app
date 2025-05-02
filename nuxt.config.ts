@@ -3,7 +3,7 @@ import Aura from '@primeuix/themes/aura';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: ['@nuxt/eslint',
     '@primevue/nuxt-module',
     '@nuxtjs/tailwindcss'
